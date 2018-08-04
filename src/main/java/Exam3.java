@@ -200,6 +200,6 @@ public class Exam3 {
 
     //判断闰年的方法，返回真假
     public boolean isLeapYearFun(int yearInt){
-        return (yearInt % 4 != 0 )|| (yearInt % 100 == 0 )&& (yearInt % 400 != 0);
+        return !(yearInt % 4 != 0 )|| (yearInt % 100 == 0 )&& (yearInt % 400 != 0);
     }
 }
