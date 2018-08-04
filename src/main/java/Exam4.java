@@ -23,8 +23,8 @@ public class Exam4 {
         }
         System.out.println();
         for (int i = 0; i <list.size() ; i++) {
-            Integer j = Integer.parseInt(list.get(i).toString());
-            if (map.get(j/10)==null){
+            Integer j = Integer.parseInt(list.get(i).toString());//不断得到list中的元素
+            if (map.get(j/10)==null){//判断键是否存在，若不存在
                 List<Integer> l = new LinkedList<Integer>();
                 list.add(j);
                 map.put(j/10,l);
